@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex LaunchX</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Pokedex LaunchX</h1>
+    </header>
+    <section class="pokedex">
+        <div class="pokedex-left-side">
+            <article class="pokemon-img-decorations">
+                <div class="white-circle">
+                    <div class="blue-circle">
+                        <div class="blue-light-circle">
+                            <div class="litlle-white-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="pokemon-img">
+                <div class="pokemon-img-first-marco">
+                    <div class="pokemon-img-second-marco">
+                        <div class="pokemon-img-third-marco">
+                            <img src="./img/img-pokeball.png" alt="Pokemon" id="pokeImg" width="150px">
+                            <b>
+                                <p id="pokemon-id-name"></p>
+                            </b>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <article class="bizagra">
+            <div class="bizagra-columna"></div>
+        </article>
+        <article class="pokemon-data">
+            <div class="pokemon-data-stadictic pd-margin">
+                <div class="pokemon-data-type pds-margin">
+                    <label for="type">Tipo:</label>
+                    <span name="type" class="pokemon-type"></span>
+                    <span name="type" class="pokemon-type"></span>
+                    <span name="type" class="pokemon-type"></span>
+                </div>
+                <div class="pokemon-data-ability pds-margin">
+                    <label for="ability">Habilidades:</label>
+                    <span name="ability" class="pokemon-ability"></span>
+                    <span class="pokemon-ability"></span>
+                    <span class="pokemon-ability"></span>
+                    <span class="pokemon-ability"></span>
+                </div>
+            </div>
+            <div class="pokemon-data-search pd-margin">
+                <p>Digite el Id o nombre del pokemon:</p>
+                <div class="pokemon-data-search-input">
+                    <input type="text" placeholder="pikachu" id="pokeName" name="pokeName" autofocus>
+                </div>
+            </div>
+            <div class="pokemon-data-decorations pd-margin">
+                <div class="pokemon-data-button">
+                    <button onclick="fetchPokemon()"><b>Buscar Pokemon</b></button>
+                </div>
+            </div>
+            <div class="pokemon-data-body">
+                <div class="pokemon-body">
+                    <p id="pokemon-height">Altura: </p>
+                </div>
+                <div class="pokemon-body">
+                    <p id="pokemon-weight">Peso: </p>
+                </div>
+            </div>
+        </article>
+    </section>
+
+</body>
+<footer>
+    <script src="./script.js"></script>
+</footer>
+
+</html>
